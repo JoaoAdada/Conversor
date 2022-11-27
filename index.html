@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container center">
+            <button class="btn" name="increase-font" id="increase-font" title="Aumentar fonte">A
+                +</button>
+            <button class="btn" name="decrease-font" id="decrease-font" title="Diminuir fonte">A
+                -</button>
+            <button class="btn" name="contraste" id="contraste" title="Modo escuro e claro">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+    <main>
+    <h1>CONVERSOR DE BASES NUMÉRICAS</h1>
+    <div class="conversor">
+        <h2>Decimal / Binário</h2>
+        <label for="decimal">Decimal</label>
+            <input type="number" name="decimal" id="dec1" min=0 onkeyup="decBin()" onchange="decBin()">
+
+        <label for="bin">Binário</label>
+            <input type="number" name="binario" id="bin" min=0 onkeyup="binDec()" onchange="binDec()">
+        <div id="erro1" class='erro'>
+
+        </div>
+    </div>
+    
+    <div class="conversor">
+        <h2>Decimal / Octal</h2>
+        <label for="decimal">Decimal</label>
+            <input type="number" name="decimal" id="dec2" min=0 onkeyup="decOct()" onchange="decOct()">
+
+        <label for="octal">Octal</label>
+            <input type="number" name="octal" id="oct" min=0 onkeyup="octDec()" onchange="octDec()">
+        <div id="erro2" class="erro">
+
+        </div>
+    </div>
+
+    <div class="conversor">
+        <h2>Decimal / Hexadecimal</h2>
+        <label for="decimal">Decimal</label>
+            <input type="number" name="decimal" id="dec3" min=0 onkeyup="decHex()" onchange="decHex()">
+
+        <label for="octal">Hexadecimal</label>
+            <input type="text" name="hex" id="hex" min=0 onkeyup="hexDec()" onchange="hexDec()">
+        <div id="erro3" class="erro">
+
+        </div>
+    </div>
+    </main> 
+
+    <footer>
+        <div class="container center">
+        <h2>Instituto Federal Catarinense Campus Videira</h2>
+        <h2>SC-135, km 125 - S/n - Campo Experimental, Videira</h2>
+        </div>
+    </footer>   
+    <script src="js/main.js"></script>
+    <script src="js/acessibility.js"></script>
+</body>
+</html>

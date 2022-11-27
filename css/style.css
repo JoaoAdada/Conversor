@@ -1,0 +1,47 @@
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+body {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.conversor {
+    width: 40%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.conversor input {
+    width: 70%;
+    margin-bottom: 5px;
+    margin-left: 15%;
+    display: block;
+    text-align: center;
+}
+
+nav{
+    background-color: lightblue;
+}
+
+footer {
+    background-color: lightblue;
+}
